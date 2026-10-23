@@ -3,60 +3,257 @@
 <head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5064895244421617"
      crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8V6D6EFW89"></script>
-    <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-8V6D6EFW89');</script>
-    <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8V6D6EFW89');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
     <title>Contact Us | Mortgage Calculator</title>
     <meta name="google-adsense-account" content="ca-pub-5064895244421617">
+    <meta name="description" content="Have questions about our mortgage calculator? Contact our team for feedback, corrections, or general inquiries.">
+    <meta name="robots" content="index,follow">
+    
+    <!-- AdSense Code -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5064895244421617" crossorigin="anonymous"></script>
+
     <style>
-        :root{--ink:#10233f;--muted:#586b83;--line:#dbe5f0;--blue:#1f5fd6;--blue-dark:#123f96;}
-        *{box-sizing:border-box} body{margin:0;background:#fff;color:var(--ink);font-family:system-ui,-apple-system,sans-serif;line-height:1.6}
-        h1,h2{line-height:1.25;margin:0 0 10px} p{margin:0 0 13px} a{color:var(--blue)}
+        /* SAME CSS AS HOME PAGE */
+        :root{
+          --ink:#10233f;--muted:#586b83;--line:#dbe5f0;--blue:#1f5fd6;
+          --blue-dark:#123f96;--soft:#f5f8fd;--green:#176b45;
+        }
+        *{box-sizing:border-box}
+        html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+        body{margin:0;background:#fff;color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:16px;line-height:1.6}
+        h1,h2,h3{line-height:1.25;margin:0 0 10px}
+        h1{font-size:clamp(26px,4vw,36px);letter-spacing:-.5px}
+        h2{font-size:22px;letter-spacing:-.25px}
+        h3{font-size:18px}
+        p{margin:0 0 13px}
+        a{color:var(--blue)}
         .wrap{width:100%;max-width:1080px;margin:auto;padding:0 16px}
+        
+        /* HEADER CSS */
         .site-head{background:linear-gradient(#fff,#f5f9ff);border-bottom:1px solid var(--line)}
         .head-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px;flex-wrap:wrap}
         .brand{display:flex;align-items:center;gap:10px;font-weight:700}
         .brand-mark{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(#4a8bfb,#1f5fd6);color:#fff;font-weight:900}
-        .brand strong{color:var(--blue)} .nav{display:flex;gap:14px;flex-wrap:wrap;font-size:14px;font-weight:650}
+        .brand strong{color:var(--blue)}
+        .nav{display:flex;gap:14px;flex-wrap:wrap;font-size:14px;font-weight:650}
         .nav a{text-decoration:none;color:var(--muted)}
-        main{padding:40px 0; max-width:800px; margin:auto; text-align:center;}
-        .contact-box{background:#f8fbff; border:1px solid var(--line); padding:40px; border-radius:12px; margin-top:20px;}
+        .nav a:hover { color: var(--blue); }
+        
+        /* PROFESSIONAL CONTACT PAGE CSS */
+        main{padding:50px 0; max-width: 1000px; margin: 0 auto;}
+        
+        .contact-header { text-align: center; margin-bottom: 40px; }
+        .contact-header p { color: var(--muted); font-size: 17px; max-width: 600px; margin: 0 auto; }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        @media(min-width: 800px) {
+            .contact-grid { grid-template-columns: 1fr 1.2fr; } /* Left side smaller, Right side bigger */
+        }
+
+        /* Left Side: Info Box */
+        .contact-info {
+            background: var(--soft);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 30px;
+        }
+        .contact-info h3 { color: var(--blue-dark); margin-bottom: 15px; }
+        .contact-info p { font-size: 15px; color: #3a4d68; margin-bottom: 20px; }
+        
+        .info-item { margin-bottom: 25px; }
+        .info-item strong { display: block; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); margin-bottom: 5px; }
+        .info-item a.email-link { 
+            font-size: 18px; 
+            font-weight: 700; 
+            color: var(--blue-dark); 
+            text-decoration: none; 
+            word-break: break-all;
+        }
+        .info-item a.email-link:hover { text-decoration: underline; }
+
+        /* Right Side: Form Box */
+        .contact-form {
+            background: #fff;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 30px -15px rgba(15,36,64,0.1);
+        }
+        .contact-form h3 { color: var(--blue-dark); margin-bottom: 20px; }
+        
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; font-size: 14px; font-weight: 700; color: #3c4f68; margin-bottom: 6px; }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cdd9e8;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 15px;
+            color: var(--ink);
+            background: #fbfdff;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: 3px solid rgba(31,95,214,.16);
+            border-color: var(--blue);
+            background: #fff;
+        }
+        .form-group textarea { resize: vertical; min-height: 120px; }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(#4a8bfb,#1f5fd6);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .submit-btn:hover { background: var(--blue-dark); }
+
+        /* Educational Disclaimer */
+        .edu-disclaimer {
+            margin-top: 40px; padding: 15px; background-color: #fffbeb;
+            border-left: 4px solid #f59e0b; border-radius: 8px;
+            font-size: 14px; color: #78350f; text-align: center;
+        }
+
+        /* FOOTER CSS */
         .site-foot{margin-top:34px;padding:24px 0;border-top:1px solid var(--line);background:#f7faff}
-        .foot-links{display:flex;flex-wrap:wrap;gap:8px 15px;font-weight:650;margin-bottom:10px; justify-content:center;} .foot-links a{text-decoration:none}
-        .site-foot p{text-align:center;}
+        .foot-links{display:flex;flex-wrap:wrap;gap:8px 15px;font-weight:650;margin-bottom:10px; justify-content: center;}
+        .foot-links a{text-decoration:none}
+        .site-foot p{font-size:13px;color:var(--muted);margin:0 0 7px; text-align: center;}
     </style>
 </head>
 <body>
+
+    <!-- HEADER (Same as Home Page) -->
     <header class="site-head">
       <div class="head-in wrap">
-        <div class="brand"><span class="brand-mark">M</span><span>Mortgage<strong>Calculator</strong></span></div>
-        <nav class="nav">
-          <a href="index.html">Calculator</a><a href="how-it-works.html">How it works</a><a href="faq.html">FAQ</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="privacy.html">Privacy</a>
-          <a href="contact.html" style="color:var(--blue);">Contact</a>
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span>Mortgage<strong>Calculator</strong></span>
+        </div>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Calculator</a>
+          <a href="how-it-works.html">How it works</a>
+          <a href="faq.html">FAQ</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">About</a>
+          <a href="privacy.html">Privacy</a>
+          <a href="contact.html" style="color:var(--blue); font-weight:bold;">Contact</a>
         </nav>
       </div>
     </header>
 
-    <main>
-        <h1>Contact Us</h1>
-        <p>We value your feedback! If you have any questions, suggestions, or found an error in our calculator, please reach out to us.</p>
+    <!-- MAIN CONTACT CONTENT -->
+    <main class="wrap">
         
-        <div class="contact-box">
-            <h2>Email Us</h2>
-            <p style="font-size: 18px;">For all inquiries, please email:</p>
-            <p><a href="mailto:pulsestyleshop@gmail.com" class="contact-email">pulsestyleshop@gmail.com</a>
-            <p style="margin-top: 20px; color: var(--muted); font-size: 14px;">(Note: Replace this email with your actual professional email address).</p>
+        <div class="contact-header">
+            <h1>Get in Touch</h1>
+            <p>Have a question about our mortgage calculator, found a bug, or just want to give feedback? We'd love to hear from you.</p>
         </div>
+
+        <div class="contact-grid">
+            
+            <!-- LEFT SIDE: CONTACT INFO -->
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>We take your feedback seriously. Whether it's a calculation error or a suggestion for a new feature, please reach out to us directly via email.</p>
+                
+                <div class="info-item">
+                    <strong>Email Address</strong>
+                    <!-- AAPKI EMAIL YAHAN HAI -->
+                    <a href="mailto:pulsestyleshop@gmail.com" class="email-link">pulsestyleshop@gmail.com</a>
+                </div>
+
+                <div class="info-item">
+                    <strong>Response Time</strong>
+                    <span style="font-size: 15px; color: #3a4d68;">We usually reply within 24 to 48 hours.</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>Looking for quick answers?</strong>
+                    <span style="font-size: 15px; color: #3a4d68;">Check out our <a href="faq.html" style="font-weight: bold;">Frequently Asked Questions</a> page. You might find the answer you need instantly.</span>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE: MESSAGE FORM -->
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                
+                <!-- Note: Yeh form aapke email par direct message bhejega (agar user ke PC par email app set hai) -->
+                <form action="mailto:pulsestyleshop@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Feedback / Question" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="edu-disclaimer">
+            <strong>Note:</strong> We do not provide personalized financial, legal, or tax advice. For specific mortgage inquiries or loan approvals, please consult with a qualified lender or financial professional.
+        </div>
+
     </main>
 
+    <!-- FOOTER (Same as Home Page) -->
     <footer class="site-foot">
       <div class="wrap">
         <div class="foot-links">
-          <a href="index.html">Calculator</a><a href="how-it-works.html">How it works</a><a href="faq.html">FAQ</a><a href="blog.html">Blog</a><a href="about.html">About</a><a href="privacy.html">Privacy Policy</a><a href="contact.html">Contact</a>
+          <a href="index.html">Calculator</a>
+          <a href="how-it-works.html">How it works</a>
+          <a href="faq.html">FAQ</a>
+          <a href="blog.html">Blog</a>
+          <a href="about.html">About</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="contact.html">Contact</a>
         </div>
-        <p>© 2026 Mortgage Calculator. All rights reserved.</p>
+        <p>© <span id="year">2026</span> Mortgage Calculator. All rights reserved.</p>
       </div>
     </footer>
+
+    <!-- Script for Footer Year -->
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
 </body>
 </html>
